@@ -7,7 +7,7 @@ services:
     image: mariadb:10.11
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_ROOT_PASSWORD: 12345
     volumes:
       - ./mariadb-data:/var/lib/mysql
       - ./sql_dump/install.sql:/docker-entrypoint-initdb.d/install.sql
